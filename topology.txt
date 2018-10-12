@@ -1,0 +1,10 @@
+For me, goal of this course is to start using automation on harware I use
+Most tasks are configuration one and my lab, at least at the beginning, is a set of varous devices not necessarly connected between them
+
+Devices ready to use are:
+1. Firewall Paloalto PA-220 (physical)
+2. Virtual cisco routers using EVE-ng
+3. Virtual F5 LTM running on VMware
+
+Based on first hands-on lab, I will start with two cisco devices (in EVE ng) connected together with OSPF routing
+Ansible is located on a Ubuntu virtual machine
