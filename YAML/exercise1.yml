@@ -1,0 +1,5 @@
+#YAML exercise 1
+---
+hostname: myhostname
+loopback: 172.16.255.1
+maxint: 4

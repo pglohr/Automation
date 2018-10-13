@@ -1,0 +1,8 @@
+# YAML exercise 3
+---
+- username: admin
+  password: password
+- username: operator
+  password: ops
+- username: manager
+  password: donttouch
