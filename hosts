@@ -1,3 +1,7 @@
-[cisco-devices]
+[cisco-ios-devices]
 R1
-R2
+R3
+[cisco-nxos-devices]
+S1
+# [paloalto-devices]
+# P1
