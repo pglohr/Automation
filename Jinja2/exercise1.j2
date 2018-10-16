@@ -1,0 +1,8 @@
+{# Exercise 1 creating a simple config with hostname and loopback #}
+!
+{# Device name is in the hostname variable #}
+hostname {{hostname}}
+!
+interface loopback 0
+ip address {{loopback}} 255.255.255.255
+!

@@ -1,0 +1,7 @@
+#YAML exercise 2
+hostname: myhostname
+loopback: 172.1.255.1
+interfaces:
+ - ethernet1/1
+ - ethernet1/2
+ - ethernet1/3

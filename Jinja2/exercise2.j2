@@ -1,0 +1,13 @@
+{# Exercise 2 creating a list of interfaces #}
+!
+{# Device name is in the hostname variable #}
+hostname {{hostname}}
+!
+interface loopback 0
+ ip address {{loopback}} 255.255.255.255
+!
+{% for interface_list in interfaces %}
+interface {{interface_list}}
+ no shutdown
+!
+{% endfor %}

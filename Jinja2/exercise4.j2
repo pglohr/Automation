@@ -1,0 +1,13 @@
+{# Exercise 4 creating a list of user and associate autocommand #}
+!
+{% for user in router_username %}
+username {{user.username}} password {{user.password}}
+{% if user.privilege is defined %} 
+username {{user.username}} privilege {{user.privilege}}
+{% endif %}
+{% if user.autocommand is defined %}
+{% for command in user.autocommand %}
+username {{user.username}} autocommand {{command}}
+{% endfor %}
+{% endif %}
+{% endfor %}

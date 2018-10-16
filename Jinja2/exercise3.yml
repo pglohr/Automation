@@ -1,0 +1,9 @@
+# YAML exercise 3
+---
+router_username:
+ - username: admin
+   password: password
+ - username: operator
+   password: ops
+ - username: manager
+   password: donttouch

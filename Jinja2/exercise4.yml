@@ -1,0 +1,16 @@
+# YAML exercise 4
+---
+router_username:
+ - username: admin
+   password: password
+   privilege: 15
+ - username: operator
+   password: ops
+   privilege: 5
+ - username: manager
+   password: donttouch
+   privilege: 0
+   autocommand:
+   - show version
+   - show ip interface brief
+   - show ip route

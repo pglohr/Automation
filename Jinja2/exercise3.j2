@@ -1,0 +1,11 @@
+{# Exercise 3 creating a list of username and password #}
+!
+{% for user in router_username %}
+{% if loop.first %} 
+! Local user database
+{% endif %}
+username {{user.username}} password {{user.password}}
+{% if loop.last %} 
+! Total number of users {{ router_username|length }}
+{% endif %}
+{% endfor %}
