@@ -1,0 +1,11 @@
+---
+- name: Read facts and create OS version status report
+  hosts: all 
+  vars:
+  - results: "results"
+  tasks:
+  - include: "reports/reports-{{src|default('ios2')}}.yml"
+    when: "'cisco-ios-devices' in group_names"
+  - include: "reports/reports-{{src|default('nxos2')}}.yml"
+    when: "'cisco-nxos-devices' in group_names"
+  - include: "reports/reports-{{dst|default('os-version')}}.yml"

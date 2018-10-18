@@ -3,5 +3,7 @@ R1
 R3
 [cisco-nxos-devices]
 S1
+#[linksys-devices]
+#L1
 # [paloalto-devices]
 # P1

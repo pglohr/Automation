@@ -1,0 +1,21 @@
+# Automation Easy wins hands-on
+---
+- name: Collect facts from devices and save them in a file
+  hosts: cisco-ios-devices
+  connection: local
+  vars:
+  - results: results
+  tasks:
+  - file: path={{results}} state=directory
+    run_once: true
+  - ios_facts:
+    register: result
+  - copy:
+      content: |
+         {{result.ansible_facts|to_nice_yaml(indent=4)}}
+      dest:    "{{results}}/{{inventory_hostname}}-ios.yml"
+  - lineinfile:
+      dest: "{{results}}/test-reports.log"
+      regexp: "{{inventory_hostname}}"
+      line: | 
+         {{'%20s %8s'|format(inventory_hostname,ansible_net_interfaces)}}

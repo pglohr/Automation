@@ -1,0 +1,8 @@
+---
+- file: path="{{results}}/os-version.log" state=touch
+  run_once: true
+- lineinfile:
+    dest: "{{results}}/os-version.log"
+    regexp: "{{inventory_hostname}}"
+    line: | 
+       {{'%20s %8s'|format(inventory_hostname,ansible_net_version)}}

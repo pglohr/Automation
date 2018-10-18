@@ -1,4 +1,5 @@
 {# Exercise 4 creating a list of user and associate autocommand #}
+#jinja2: trim_blocks: True 
 !
 {% for user in router_username %}
 username {{user.username}} password {{user.password}}

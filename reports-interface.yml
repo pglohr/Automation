@@ -1,0 +1,8 @@
+---
+- name: Read facts and create interfaces status report
+  hosts: cisco-ios-devices
+  vars:
+  - results: "results"
+  tasks:
+  - include: "reports/reports-{{src|default('ios2')}}.yml"
+  - include: "reports/reports-{{dst|default('interface-status')}}.yml"
