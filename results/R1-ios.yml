@@ -59,7 +59,7 @@ ansible_net_interfaces:
         mtu: 1500
         operstatus: administratively down
         type: AmdP2
-ansible_net_memfree_mb: 865136
+ansible_net_memfree_mb: 865161
 ansible_net_memtotal_mb: 915338
 ansible_net_model: null
 ansible_net_neighbors:
