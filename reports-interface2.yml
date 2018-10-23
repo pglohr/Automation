@@ -5,8 +5,8 @@
   vars:
   - results: "results"
   tasks:
-  - include: "reports/{{src|default('ios')}}.yml"
+  - ios_facts: 
     when: "'cisco-ios-devices' in group_names"
-  - include: "reports/{{src|default('nxos')}}.yml"
+  - nxos_facts: 
     when: "'cisco-nxos-devices' in group_names"
-  - include: "reports/{{dst|default('interface-status-jinja')}}.yml"
+  - include: "reports/{{dst|default('interface-status')}}.yml"

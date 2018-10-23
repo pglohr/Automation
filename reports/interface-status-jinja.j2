@@ -1,0 +1,4 @@
+{% for inventory_hostname,ansible_facts in allhosts|dictsort %}
+{{inventory_hostname}} 
+{{ansible_facts.ansible_net_interfaces}}
+{% endfor %}

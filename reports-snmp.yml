@@ -1,0 +1,9 @@
+---
+- name: Read facts and create interfaces status report
+  hosts: all 
+  gather_facts: no
+  vars:
+  - results: "results"
+  tasks:
+  - include: "reports/{{src|default('snmp')}}.yml"
+  - include: "reports/{{dst|default('interface-status')}}.yml"

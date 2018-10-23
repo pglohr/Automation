@@ -1,6 +1,0 @@
----
-- file: path="{{results}}/interface-status.log" state=touch
-  run_once: true
-- template: src="reports-interface-status.j2" dest="{{results}}/interface-status.log"
-  vars:
-    allhosts: "{{hostvars}}"

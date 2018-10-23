@@ -1,0 +1,6 @@
+---
+- file: path="{{results}}/interface-status-jinja.log" state=touch
+  run_once: true
+- template: src="interface-status-jinja.j2" dest="{{results}}/interface-status-jinja.log"
+  vars:
+    allhosts: "{{hostvars}}"

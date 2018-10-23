@@ -1,0 +1,17 @@
+# Automation Easy wins hands-on
+---
+  - napalm_get_facts:
+      hostname: '{{ inventory_hostname }}'
+      username: '{{ user }}'
+      dev_os: '{{ os }}'
+      password: '{{ passwd }}'
+      filter: ['facts']
+    register: result
+
+  -  debug:
+      var: result
+  
+  - copy:
+      content: |
+         {{hostvars[inventory_hostname]|to_nice_yaml(indent=4)}}
+      dest: "{{results}}/{{inventory_hostname}}-napalm.yml"
