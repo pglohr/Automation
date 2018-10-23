@@ -1,2 +1,3 @@
 ---
+ os: nxos
  snmp_community: public

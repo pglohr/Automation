@@ -5,5 +5,5 @@
   vars:
   - results: "results"
   tasks:
-  - include: "reports/{{src|default('snmp')}}.yml"
-#  - include: "reports/{{dst|default('interface-status')}}.yml"
+   - include: "reports/{{src|default('napalm')}}.yml"
+   - include: "reports/{{dst|default('interface-status-napalm')}}.yml"

@@ -1,0 +1,6 @@
+---
+- file: path="{{results}}/interface-status-napalm-jinja.log" state=touch
+  run_once: true
+- template: src="interface-status-napalm-jinja.j2" dest="{{results}}/interface-status-napalm-jinja.log"
+  vars:
+    allhosts: "{{hostvars}}"

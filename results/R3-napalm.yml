@@ -1,0 +1,213 @@
+ansible_check_mode: false
+ansible_diff_mode: false
+ansible_facts:
+    napalm_facts:
+        fqdn: R3.lab.test
+        hostname: R3
+        interface_list:
+        - Ethernet0/0
+        - Ethernet0/1
+        - Ethernet0/2
+        - Ethernet0/3
+        model: Unknown
+        os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
+            ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
+        serial_number: '67108912'
+        uptime: 33540
+        vendor: Cisco
+    napalm_fqdn: R3.lab.test
+    napalm_hostname: R3
+    napalm_interface_list:
+    - Ethernet0/0
+    - Ethernet0/1
+    - Ethernet0/2
+    - Ethernet0/3
+    napalm_interfaces:
+        Ethernet0/0:
+            description: ''
+            is_enabled: false
+            is_up: false
+            last_flapped: -1.0
+            mac_address: AA:BB:CC:00:30:00
+            speed: 10
+        Ethernet0/1:
+            description: ''
+            is_enabled: true
+            is_up: true
+            last_flapped: -1.0
+            mac_address: AA:BB:CC:00:30:10
+            speed: 10
+        Ethernet0/2:
+            description: ''
+            is_enabled: false
+            is_up: false
+            last_flapped: -1.0
+            mac_address: AA:BB:CC:00:30:20
+            speed: 10
+        Ethernet0/3:
+            description: ''
+            is_enabled: false
+            is_up: false
+            last_flapped: -1.0
+            mac_address: AA:BB:CC:00:30:30
+            speed: 10
+    napalm_model: Unknown
+    napalm_os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
+        ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
+    napalm_serial_number: '67108912'
+    napalm_uptime: 33540
+    napalm_vendor: Cisco
+ansible_forks: 5
+ansible_inventory_sources:
+- /home/administrator/Git/Automation/hosts
+ansible_playbook_python: /usr/bin/python2
+ansible_run_tags:
+- all
+ansible_skip_tags: []
+ansible_ssh_host: 172.17.1.3
+ansible_ssh_pass: password
+ansible_ssh_user: admin
+ansible_version:
+    full: 2.5.1
+    major: 2
+    minor: 5
+    revision: 1
+    string: 2.5.1
+dst: interface-status-napalm-jinja
+group_names:
+- cisco-ios-devices
+groups:
+    all:
+    - S1
+    - R1
+    - R3
+    cisco-ios-devices:
+    - R1
+    - R3
+    cisco-nxos-devices:
+    - S1
+    ungrouped: []
+inventory_dir: /home/administrator/Git/Automation
+inventory_file: /home/administrator/Git/Automation/hosts
+inventory_hostname: R3
+inventory_hostname_short: R3
+napalm_facts:
+    fqdn: R3.lab.test
+    hostname: R3
+    interface_list:
+    - Ethernet0/0
+    - Ethernet0/1
+    - Ethernet0/2
+    - Ethernet0/3
+    model: Unknown
+    os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
+        ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
+    serial_number: '67108912'
+    uptime: 33540
+    vendor: Cisco
+napalm_fqdn: R3.lab.test
+napalm_hostname: R3
+napalm_interface_list:
+- Ethernet0/0
+- Ethernet0/1
+- Ethernet0/2
+- Ethernet0/3
+napalm_interfaces:
+    Ethernet0/0:
+        description: ''
+        is_enabled: false
+        is_up: false
+        last_flapped: -1.0
+        mac_address: AA:BB:CC:00:30:00
+        speed: 10
+    Ethernet0/1:
+        description: ''
+        is_enabled: true
+        is_up: true
+        last_flapped: -1.0
+        mac_address: AA:BB:CC:00:30:10
+        speed: 10
+    Ethernet0/2:
+        description: ''
+        is_enabled: false
+        is_up: false
+        last_flapped: -1.0
+        mac_address: AA:BB:CC:00:30:20
+        speed: 10
+    Ethernet0/3:
+        description: ''
+        is_enabled: false
+        is_up: false
+        last_flapped: -1.0
+        mac_address: AA:BB:CC:00:30:30
+        speed: 10
+napalm_model: Unknown
+napalm_os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
+    ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
+napalm_serial_number: '67108912'
+napalm_uptime: 33540
+napalm_vendor: Cisco
+omit: __omit_place_holder__153b0b1a8d0b40547f1e748d3a42f9be56dfbe51
+os: ios
+playbook_dir: /home/administrator/Git/Automation
+result:
+    ansible_facts:
+        napalm_facts:
+            fqdn: R3.lab.test
+            hostname: R3
+            interface_list:
+            - Ethernet0/0
+            - Ethernet0/1
+            - Ethernet0/2
+            - Ethernet0/3
+            model: Unknown
+            os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
+                ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
+            serial_number: '67108912'
+            uptime: 33540
+            vendor: Cisco
+        napalm_fqdn: R3.lab.test
+        napalm_hostname: R3
+        napalm_interface_list:
+        - Ethernet0/0
+        - Ethernet0/1
+        - Ethernet0/2
+        - Ethernet0/3
+        napalm_interfaces:
+            Ethernet0/0:
+                description: ''
+                is_enabled: false
+                is_up: false
+                last_flapped: -1.0
+                mac_address: AA:BB:CC:00:30:00
+                speed: 10
+            Ethernet0/1:
+                description: ''
+                is_enabled: true
+                is_up: true
+                last_flapped: -1.0
+                mac_address: AA:BB:CC:00:30:10
+                speed: 10
+            Ethernet0/2:
+                description: ''
+                is_enabled: false
+                is_up: false
+                last_flapped: -1.0
+                mac_address: AA:BB:CC:00:30:20
+                speed: 10
+            Ethernet0/3:
+                description: ''
+                is_enabled: false
+                is_up: false
+                last_flapped: -1.0
+                mac_address: AA:BB:CC:00:30:30
+                speed: 10
+        napalm_model: Unknown
+        napalm_os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version
+            15.2(2.3)T, ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
+        napalm_serial_number: '67108912'
+        napalm_uptime: 33540
+        napalm_vendor: Cisco
+    changed: false
+    failed: false
+snmp_community: public
