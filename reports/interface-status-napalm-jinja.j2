@@ -1,4 +1,8 @@
 {% for inventory_hostname,ansible_facts in allhosts|dictsort %}
-{{inventory_hostname}} 
-{{ansible_facts.napalm_interfaces}}
+ {{inventory_hostname}} 
+ {{ansible_facts.napalm_interfaces}}
+ {# below loop is not working #}
+ {% for k,v in hostvars[inventory_hostname].items() if 'is_' in k %}
+  {{v}}
+ {% endfor %}
 {% endfor %}

@@ -1,0 +1,62 @@
+ansible_all_ipv4_addresses: []
+ansible_check_mode: false
+ansible_diff_mode: false
+ansible_facts:
+    all_ipv4_addresses: []
+    syscontact: No Such Object currently exists at this OID
+    sysdescr: No Such Object currently exists at this OID
+    syslocation: No Such Object currently exists at this OID
+    sysname: No Such Object currently exists at this OID
+    sysobjectid: No Such Object currently exists at this OID
+    sysuptime: No Such Object currently exists at this OID
+ansible_forks: 5
+ansible_inventory_sources:
+- /home/administrator/Git/Automation/hosts
+ansible_limit: R1
+ansible_playbook_python: /usr/bin/python
+ansible_run_tags:
+- all
+ansible_skip_tags: []
+ansible_ssh_host: 172.16.204.148
+ansible_ssh_pass: password
+ansible_ssh_user: admin
+ansible_syscontact: No Such Object currently exists at this OID
+ansible_sysdescr: No Such Object currently exists at this OID
+ansible_syslocation: No Such Object currently exists at this OID
+ansible_sysname: No Such Object currently exists at this OID
+ansible_sysobjectid: No Such Object currently exists at this OID
+ansible_sysuptime: No Such Object currently exists at this OID
+ansible_verbosity: 0
+ansible_version:
+    full: 2.7.1
+    major: 2
+    minor: 7
+    revision: 1
+    string: 2.7.1
+group_names:
+- cisco-ios-devices
+groups:
+    all:
+    - S1
+    - P1
+    - R1
+    - R3
+    - L1
+    cisco-ios-devices:
+    - R1
+    - R3
+    cisco-nxos-devices:
+    - S1
+    linksys-devices:
+    - L1
+    paloalto-devices:
+    - P1
+    ungrouped: []
+inventory_dir: /home/administrator/Git/Automation
+inventory_file: /home/administrator/Git/Automation/hosts
+inventory_hostname: R1
+inventory_hostname_short: R1
+omit: __omit_place_holder__bd996d65a3d33fceffb429c5bd67416c30dbc544
+os: ios
+playbook_dir: /home/administrator/Git/Automation
+snmp_community: public

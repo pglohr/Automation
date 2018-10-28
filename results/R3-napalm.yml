@@ -13,7 +13,7 @@ ansible_facts:
         os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
             ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
         serial_number: '67108912'
-        uptime: 33540
+        uptime: 37080
         vendor: Cisco
     napalm_fqdn: R3.lab.test
     napalm_hostname: R3
@@ -55,7 +55,7 @@ ansible_facts:
     napalm_os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
         ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
     napalm_serial_number: '67108912'
-    napalm_uptime: 33540
+    napalm_uptime: 37080
     napalm_vendor: Cisco
 ansible_forks: 5
 ansible_inventory_sources:
@@ -103,7 +103,7 @@ napalm_facts:
     os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
         ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
     serial_number: '67108912'
-    uptime: 33540
+    uptime: 37080
     vendor: Cisco
 napalm_fqdn: R3.lab.test
 napalm_hostname: R3
@@ -145,9 +145,9 @@ napalm_model: Unknown
 napalm_os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
     ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
 napalm_serial_number: '67108912'
-napalm_uptime: 33540
+napalm_uptime: 37080
 napalm_vendor: Cisco
-omit: __omit_place_holder__153b0b1a8d0b40547f1e748d3a42f9be56dfbe51
+omit: __omit_place_holder__8a7b21792bfc1ee6134fe22415ac00601bc7d4c2
 os: ios
 playbook_dir: /home/administrator/Git/Automation
 result:
@@ -164,7 +164,7 @@ result:
             os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version 15.2(2.3)T,
                 ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
             serial_number: '67108912'
-            uptime: 33540
+            uptime: 37080
             vendor: Cisco
         napalm_fqdn: R3.lab.test
         napalm_hostname: R3
@@ -206,7 +206,7 @@ result:
         napalm_os_version: Linux Software (I86BI_LINUX-ADVENTERPRISEK9-M), Version
             15.2(2.3)T, ENGINEERING WEEKLY BUILD, synced to V151_4_M1_13
         napalm_serial_number: '67108912'
-        napalm_uptime: 33540
+        napalm_uptime: 37080
         napalm_vendor: Cisco
     changed: false
     failed: false
