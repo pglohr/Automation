@@ -1,8 +1,18 @@
-{% for inventory_hostname,ansible_facts in allhosts|dictsort %}
- {{inventory_hostname}} 
- {{ansible_facts.napalm_interfaces}}
- {# below loop is not working #}
- {% for k,v in hostvars[inventory_hostname].items() if 'is_' in k %}
-  {{v}}
- {% endfor %}
+#jinja2: lstrip_blocks: True
+{% for inventory_hostname, napalm_facts in allhosts|dictsort -%}
+  {{inventory_hostname}}
+  {% for key in napalm_facts.napalm_interfaces|dictsort %}
+    {% for sub_key in key %}
+      {% if loop.first -%}
+        {{sub_key}}
+      {%- else %}
+        {% for field, value in sub_key|dictsort %}
+          {% if field == "is_enabled" %} Admin-State {{value}} {% endif %}
+          {% if field == "is_up" %} State {{value}} {% endif %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {# extra line to have a crlf in report #}
+
+  {% endfor %}
 {% endfor %}

@@ -1,6 +1,8 @@
 ---
 - name: Read facts and create interfaces status report
-  hosts: all 
+  hosts:
+  - cisco-ios-devices
+  - cisco-nxos-devices 
   gather_facts: no
   vars:
   - results: "results"
