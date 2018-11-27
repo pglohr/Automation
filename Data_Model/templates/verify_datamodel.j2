@@ -1,0 +1,16 @@
+{# Validate data model information #}
+{% for lb in infrastructure %}
+LB {{lb.name}}
+Interface {{lb.interface}} Vlan {{lb.vlan}}
+Subnet{{ lb.subnet|ipaddr('network') }}
+Mask {{lb.subnet|ipaddr('prefix')}}
+{% set IP = lb.subnet|ipaddr('1') %}
+SelfIP {{ IP | ipaddr('address') }}  
+{% for svc in services %}
+service {{svc.name}} VIP {{svc.vip}} Protocol {{svc.protocol}}
+{% for nodes in svc.nodes %}
+{% set IP = lb.subnet|ipaddr(nodes) %}
+Node {{ IP | ipaddr('address') }}
+{% endfor %}
+{% endfor %}
+{% endfor %}

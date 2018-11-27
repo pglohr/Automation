@@ -1,0 +1,16 @@
+---
+- name: Validate information contained in data models files
+  hosts: all
+  gather_facts: no
+  tasks:
+   - name: Import infrastrcture variables
+     include_vars:
+       file: infrastructure.yml
+     run_once: true
+   - name: Import services variables
+     include_vars:
+       file: services.yml
+     run_once: true
+   - file: path="results/check_file.log" state=touch
+     run_once: true
+   - template: src="templates/verify_datamodel.j2" dest="results/check_file.log"

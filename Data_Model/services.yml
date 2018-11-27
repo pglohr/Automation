@@ -1,11 +1,12 @@
 ---
-HTTP:
+services:
+  - name: HTTP
     vip: 11
     protocol: 80
     nodes:
         - 100
         - 101
-SMTP:
+  - name: SMTP
     vip: 12
     protocol: 25
     nodes:

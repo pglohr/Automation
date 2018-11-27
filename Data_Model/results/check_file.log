@@ -1,0 +1,33 @@
+LB L1
+Interface 1.1 Vlan 10
+Subnet172.17.11.0
+Mask 24
+SelfIP 172.17.11.1  
+service HTTP VIP 11 Protocol 80
+Node 172.17.11.100
+Node 172.17.11.101
+service SMTP VIP 12 Protocol 25
+Node 172.17.11.102
+Node 172.17.11.103
+LB L2
+Interface 1.1 Vlan 10
+Subnet172.17.12.0
+Mask 24
+SelfIP 172.17.12.1  
+service HTTP VIP 11 Protocol 80
+Node 172.17.12.100
+Node 172.17.12.101
+service SMTP VIP 12 Protocol 25
+Node 172.17.12.102
+Node 172.17.12.103
+LB L3
+Interface 1.1 Vlan 10
+Subnet172.17.13.0
+Mask 24
+SelfIP 172.17.13.1  
+service HTTP VIP 11 Protocol 80
+Node 172.17.13.100
+Node 172.17.13.101
+service SMTP VIP 12 Protocol 25
+Node 172.17.13.102
+Node 172.17.13.103
