@@ -74,7 +74,7 @@ ansible_facts:
         model: NX-OSv Chassis
         os_version: 7.0(3)I5(2)
         serial_number: 9R7VB3AIGQK
-        uptime: 25739
+        uptime: 27155
         vendor: Cisco
     napalm_fqdn: S1
     napalm_hostname: S1
@@ -150,7 +150,7 @@ ansible_facts:
             description: ''
             is_enabled: true
             is_up: true
-            last_flapped: 1542201650.178062
+            last_flapped: 1542201650.151555
             mac_address: '50:00:00:02:00:08'
             speed: 1000
         Ethernet1/10:
@@ -227,7 +227,7 @@ ansible_facts:
             description: ''
             is_enabled: true
             is_up: true
-            last_flapped: 1542201650.178109
+            last_flapped: 1542201650.151595
             mac_address: '50:00:00:02:00:09'
             speed: 1000
         Ethernet1/20:
@@ -304,7 +304,7 @@ ansible_facts:
             description: ''
             is_enabled: true
             is_up: true
-            last_flapped: 1542201650.178146
+            last_flapped: 1542201650.15163
             mac_address: 50:00:00:02:00:0A
             speed: 1000
         Ethernet1/30:
@@ -381,7 +381,7 @@ ansible_facts:
             description: ''
             is_enabled: true
             is_up: true
-            last_flapped: 1542201650.17818
+            last_flapped: 1542201650.151661
             mac_address: 50:00:00:02:00:0B
             speed: 1000
         Ethernet1/40:
@@ -458,7 +458,7 @@ ansible_facts:
             description: ''
             is_enabled: true
             is_up: true
-            last_flapped: 1542201650.178212
+            last_flapped: 1542201650.151692
             mac_address: 50:00:00:02:00:0C
             speed: 1000
         Ethernet1/50:
@@ -535,7 +535,7 @@ ansible_facts:
             description: ''
             is_enabled: true
             is_up: true
-            last_flapped: 1542201651.178246
+            last_flapped: 1542201651.151723
             mac_address: 50:00:00:02:00:0D
             speed: 1000
         Ethernet1/60:
@@ -577,7 +577,7 @@ ansible_facts:
             description: ''
             is_enabled: true
             is_up: true
-            last_flapped: 1542201651.178288
+            last_flapped: 1542201651.151753
             mac_address: 50:00:00:02:00:0E
             speed: 1000
         Ethernet1/8:
@@ -611,7 +611,7 @@ ansible_facts:
     napalm_model: NX-OSv Chassis
     napalm_os_version: 7.0(3)I5(2)
     napalm_serial_number: 9R7VB3AIGQK
-    napalm_uptime: 25739
+    napalm_uptime: 27155
     napalm_vendor: Cisco
 ansible_forks: 5
 ansible_host: 172.17.1.254
@@ -721,7 +721,7 @@ napalm_facts:
     model: NX-OSv Chassis
     os_version: 7.0(3)I5(2)
     serial_number: 9R7VB3AIGQK
-    uptime: 25739
+    uptime: 27155
     vendor: Cisco
 napalm_fqdn: S1
 napalm_hostname: S1
@@ -797,7 +797,7 @@ napalm_interfaces:
         description: ''
         is_enabled: true
         is_up: true
-        last_flapped: 1542201650.178062
+        last_flapped: 1542201650.151555
         mac_address: '50:00:00:02:00:08'
         speed: 1000
     Ethernet1/10:
@@ -874,7 +874,7 @@ napalm_interfaces:
         description: ''
         is_enabled: true
         is_up: true
-        last_flapped: 1542201650.178109
+        last_flapped: 1542201650.151595
         mac_address: '50:00:00:02:00:09'
         speed: 1000
     Ethernet1/20:
@@ -951,7 +951,7 @@ napalm_interfaces:
         description: ''
         is_enabled: true
         is_up: true
-        last_flapped: 1542201650.178146
+        last_flapped: 1542201650.15163
         mac_address: 50:00:00:02:00:0A
         speed: 1000
     Ethernet1/30:
@@ -1028,7 +1028,7 @@ napalm_interfaces:
         description: ''
         is_enabled: true
         is_up: true
-        last_flapped: 1542201650.17818
+        last_flapped: 1542201650.151661
         mac_address: 50:00:00:02:00:0B
         speed: 1000
     Ethernet1/40:
@@ -1105,7 +1105,7 @@ napalm_interfaces:
         description: ''
         is_enabled: true
         is_up: true
-        last_flapped: 1542201650.178212
+        last_flapped: 1542201650.151692
         mac_address: 50:00:00:02:00:0C
         speed: 1000
     Ethernet1/50:
@@ -1182,7 +1182,7 @@ napalm_interfaces:
         description: ''
         is_enabled: true
         is_up: true
-        last_flapped: 1542201651.178246
+        last_flapped: 1542201651.151723
         mac_address: 50:00:00:02:00:0D
         speed: 1000
     Ethernet1/60:
@@ -1224,7 +1224,7 @@ napalm_interfaces:
         description: ''
         is_enabled: true
         is_up: true
-        last_flapped: 1542201651.178288
+        last_flapped: 1542201651.151753
         mac_address: 50:00:00:02:00:0E
         speed: 1000
     Ethernet1/8:
@@ -1258,9 +1258,9 @@ napalm_interfaces:
 napalm_model: NX-OSv Chassis
 napalm_os_version: 7.0(3)I5(2)
 napalm_serial_number: 9R7VB3AIGQK
-napalm_uptime: 25739
+napalm_uptime: 27155
 napalm_vendor: Cisco
-omit: __omit_place_holder__1d4d0bbbfe1410f3e0f4a20b8d26db0dc60d9668
+omit: __omit_place_holder__ddd1cfde965a43ebea86cca44c1e794ef88e976a
 os: nxos
 playbook_dir: /home/administrator/Git/Automation
 result:
@@ -1338,7 +1338,7 @@ result:
             model: NX-OSv Chassis
             os_version: 7.0(3)I5(2)
             serial_number: 9R7VB3AIGQK
-            uptime: 25739
+            uptime: 27155
             vendor: Cisco
         napalm_fqdn: S1
         napalm_hostname: S1
@@ -1414,7 +1414,7 @@ result:
                 description: ''
                 is_enabled: true
                 is_up: true
-                last_flapped: 1542201650.178062
+                last_flapped: 1542201650.151555
                 mac_address: '50:00:00:02:00:08'
                 speed: 1000
             Ethernet1/10:
@@ -1491,7 +1491,7 @@ result:
                 description: ''
                 is_enabled: true
                 is_up: true
-                last_flapped: 1542201650.178109
+                last_flapped: 1542201650.151595
                 mac_address: '50:00:00:02:00:09'
                 speed: 1000
             Ethernet1/20:
@@ -1568,7 +1568,7 @@ result:
                 description: ''
                 is_enabled: true
                 is_up: true
-                last_flapped: 1542201650.178146
+                last_flapped: 1542201650.15163
                 mac_address: 50:00:00:02:00:0A
                 speed: 1000
             Ethernet1/30:
@@ -1645,7 +1645,7 @@ result:
                 description: ''
                 is_enabled: true
                 is_up: true
-                last_flapped: 1542201650.17818
+                last_flapped: 1542201650.151661
                 mac_address: 50:00:00:02:00:0B
                 speed: 1000
             Ethernet1/40:
@@ -1722,7 +1722,7 @@ result:
                 description: ''
                 is_enabled: true
                 is_up: true
-                last_flapped: 1542201650.178212
+                last_flapped: 1542201650.151692
                 mac_address: 50:00:00:02:00:0C
                 speed: 1000
             Ethernet1/50:
@@ -1799,7 +1799,7 @@ result:
                 description: ''
                 is_enabled: true
                 is_up: true
-                last_flapped: 1542201651.178246
+                last_flapped: 1542201651.151723
                 mac_address: 50:00:00:02:00:0D
                 speed: 1000
             Ethernet1/60:
@@ -1841,7 +1841,7 @@ result:
                 description: ''
                 is_enabled: true
                 is_up: true
-                last_flapped: 1542201651.178288
+                last_flapped: 1542201651.151753
                 mac_address: 50:00:00:02:00:0E
                 speed: 1000
             Ethernet1/8:
@@ -1875,7 +1875,7 @@ result:
         napalm_model: NX-OSv Chassis
         napalm_os_version: 7.0(3)I5(2)
         napalm_serial_number: 9R7VB3AIGQK
-        napalm_uptime: 25739
+        napalm_uptime: 27155
         napalm_vendor: Cisco
     changed: false
     failed: false

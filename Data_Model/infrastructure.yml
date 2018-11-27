@@ -1,0 +1,15 @@
+---
+infrastructure:
+    - name: L1
+      interface: 1.1
+      vlan: 10
+      subnet: 172.17.11.0/24 
+    - name: L2
+      interface: 1.1
+      vlan: 10
+      subnet: 172.17.12.0/24 
+    - name: L3
+      interface: 1.1
+      vlan: 10
+      subnet: 172.17.13.0/24 
+

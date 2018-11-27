@@ -1,0 +1,13 @@
+---
+HTTP:
+    vip: 11
+    protocol: 80
+    nodes:
+        - 100
+        - 101
+SMTP:
+    vip: 12
+    protocol: 25
+    nodes:
+        - 102
+        - 103
