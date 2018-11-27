@@ -5,7 +5,7 @@ and add new simple laod balannced services
 
 ## Data model
 
-Infrastructure data model **infrastructure.yml*** contain network informations to create basic connectivity on each load-balancer
+Infrastructure data model **infrastructure.yml** contain network informations to create basic connectivity on each load-balancer
 Each load-balancer must have :
   * an interface
   * a vlan id
