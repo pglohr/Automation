@@ -2,15 +2,13 @@
 {% for lb in infrastructure %}
 LB {{lb.name}}
 Interface {{lb.interface}} Vlan {{lb.vlan}}
-Subnet{{ lb.subnet|ipaddr('network') }}
+Subnet {{ lb.subnet|ipaddr('network') }}
 Mask {{lb.subnet|ipaddr('prefix')}}
-{% set IP = lb.subnet|ipaddr('1') %}
-SelfIP {{ IP | ipaddr('address') }}  
+SelfIP {{ lb.subnet | ipaddr('1') | ipaddr('address') }}  
 {% for svc in services %}
-service {{svc.name}} VIP {{svc.vip}} Protocol {{svc.protocol}}
+service {{svc.name}} VIP {{ lb.subnet | ipaddr(svc.vip) | ipaddr('address') }} Protocol {{svc.protocol}}
 {% for nodes in svc.nodes %}
-{% set IP = lb.subnet|ipaddr(nodes) %}
-Node {{ IP | ipaddr('address') }}
+Node {{ lb.subnet | ipaddr(nodes) | ipaddr('address') }}
 {% endfor %}
 {% endfor %}
 {% endfor %}
